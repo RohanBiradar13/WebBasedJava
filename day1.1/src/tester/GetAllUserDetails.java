@@ -20,8 +20,9 @@ public class GetAllUserDetails {
 					+ rst.getString(3) + " email " + rst.getString(4) + " password " + rst.getString(5) + " res amount "
 					+ rst.getInt(6) + " res date " + rst.getDate(7)));
 
-		cn.close();
+		rst.close();
 		st.close();
+		cn.close();
 
 	}
 
